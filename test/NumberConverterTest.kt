@@ -29,10 +29,10 @@ class NumberConverterTest {
     @Test
     fun `should return correct conversion for base 16`() {
         val converter = NumberConverter()
-        assertEquals("a", converter.convert(10, 16))
+        assertEquals("A", converter.convert(10, 16))
         assertEquals("9", converter.convert(9, 16))
         assertEquals("64", converter.convert(100, 16))
         assertEquals("5", converter.convert(5, 16))
-        assertEquals("5ba0", converter.convert(23456, 16))
+        assertEquals("5BA0", converter.convert(23456, 16))
     }
 }
